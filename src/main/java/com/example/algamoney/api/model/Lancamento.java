@@ -1,5 +1,6 @@
 package com.example.algamoney.api.model;
 
+import java.math.BigDecimal;
 import java.time.LocalDate;
 
 import javax.persistence.Column;
@@ -27,6 +28,8 @@ public class Lancamento {
 	
 	@Column(name = "data_pagamento")
 	private LocalDate dataPagamento;
+	
+	private BigDecimal valor;
 	
 	private String observacao;
 	
@@ -71,6 +74,14 @@ public class Lancamento {
 
 	public void setDataPagamento(LocalDate dataPagamento) {
 		this.dataPagamento = dataPagamento;
+	}
+	
+	public BigDecimal getValor() {
+		return valor;
+	}
+	
+	public void setValor(BigDecimal valor) {
+		this.valor = valor;
 	}
 
 	public String getObservacao() {
