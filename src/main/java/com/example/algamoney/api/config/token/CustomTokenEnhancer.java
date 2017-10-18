@@ -1,4 +1,4 @@
-package com.example.algamoney.api.config;
+package com.example.algamoney.api.config.token;
 
 import java.util.HashMap;
 import java.util.Map;
